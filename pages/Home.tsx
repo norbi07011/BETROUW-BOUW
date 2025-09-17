@@ -32,10 +32,13 @@ const Home: React.FC = () => {
 
   return (
     <div>
-  {/* Hero Section */}
-  <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(/project-images/tło.jpg)` }}>
+      {/* Hero Section */}
+      <section
+        className="relative min-h-[400px] md:min-h-[700px] lg:min-h-[1400px] flex items-center px-0 overflow-hidden bg-cover bg-center"
+        style={{ backgroundImage: `url(/project-images/tło.jpg)` }}
+      >
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center text-white">
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center text-center text-white w-full">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight animate-fade-in-down">{t.home_hero_title}</h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl animate-fade-in-up">{t.home_hero_subtitle}</p>
           <Link to="/contact" className="mt-8 px-8 py-3 bg-brand-gold text-white font-bold rounded-lg shadow-lg hover:bg-yellow-600 transition-transform hover:scale-105 transform">
